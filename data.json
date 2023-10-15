@@ -1,0 +1,35 @@
+{
+  "sbook": [
+    {
+      "email": "akashkolekar07@gmail.com",
+      "username": "Akash",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "babu@test.com",
+      "username": "babu",
+      "password": "1234",
+      "id": 3
+    }
+  ],
+  "post": [
+    {
+      "text": "Hello nature",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD4OdoW8dWdx9qDuGsdGrCG_CVISle7FTzjnOdWrHu&s",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "comment": "loved it",
+      "name": "babu",
+      "id": 2
+    },
+    {
+      "comment": "nice pic",
+      "name": "Akash",
+      "id": 5
+    }
+  ]
+}

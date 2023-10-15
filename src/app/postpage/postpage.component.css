@@ -1,0 +1,22 @@
+.text-top{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.size-box{
+    margin-left: 35vw;
+}
+.size-box button{
+    padding: 0px 30px 0px 30px;
+}
+.size-box input{
+    margin-left: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(183, 183, 183);
+}
+.image-box{
+    box-shadow: 0px 0px 4px -1px;
+}

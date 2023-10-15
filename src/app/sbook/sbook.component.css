@@ -1,0 +1,26 @@
+.text-top{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.outer-div{
+    box-shadow: 1px 1px 5px -1px;
+    margin-top: 25px;
+}
+.inner-div{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.text-account{
+    cursor: pointer;
+    padding: 4px;
+}
+.text-account:hover{
+    background-color: rgb(223, 223, 223);
+    padding: 4px;
+    border-radius: 5px;
+}

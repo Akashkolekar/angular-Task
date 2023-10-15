@@ -1,0 +1,48 @@
+<div>
+  <p class="text-top">SBook</p>
+  <form #login="ngForm">
+    <div *ngIf="!isEdit" class="justify-content-center d-flex">
+        <div class="outer-div p-4">
+            <strong style="margin-left: 40%;">Login</strong><br>
+            <small class="text-danger" style="font-size: small; margin-left: 20px;">{{errorMsg}}</small>    
+            <div style="margin-top: 10px;">
+                <input class="form-control" type="email" placeholder="Enter your email" name="email" ngModel>
+            </div><br>
+            <div>
+                <input class="form-control" type="password" placeholder="Enter your password" name="password" ngModel>
+            </div>
+            <div class="inner-div">
+                <button class="btn bg-secondary btn-sm text-white" (click)="loginPage(login.value)">Login</button>
+                <small>OR</small>
+                <small class="text-account" (click)="createAc()">Create account</small>
+            </div>
+        </div>
+    </div>
+  </form>
+
+
+  <form #createAccount="ngForm">
+    <div *ngIf="isEdit" class="justify-content-center d-flex">
+    
+        <div class="outer-div p-4">
+            <strong style="margin-left:25%;">Create Account</strong><br>
+            <small class="text-success" style="font-size: small; margin-left: 50px;">{{errorMsgN}}</small>
+            <div style="margin-top: 10px;">
+                <input class="form-control" type="text" placeholder="Enter your email" name="email" ngModel>
+            </div><br>
+            <div>
+                <input class="form-control" type="text" placeholder="Enter your username" name="username" ngModel>
+            </div><br>
+            <div>
+                <input class="form-control" type="password" placeholder="Enter your password" name="password" ngModel>
+            </div>
+            <div class="inner-div">
+                <button class="btn bg-secondary btn-sm text-white" type="submit" (click)="createAcc(createAccount.value)">Create Account</button>
+                <small>OR</small>
+                <small class="text-account" (click)="loginAc()">Login</small>
+            </div>
+        </div>
+    </div>
+  </form>
+
+</div>

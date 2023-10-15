@@ -1,0 +1,28 @@
+<div>
+    <p class="text-top">SBook</p>
+    <button class="btn btn-danger btn-sm" (click)="logout()">logout</button>
+    <div class="size-box col-sm-4">
+        <form #data="ngForm">
+            <textarea style="background-color: rgb(234, 234, 234);" class="form-control" name="text" cols="30" rows="3" placeholder="Say something..." ngModel></textarea>
+            <div>
+                <button class="btn btn-primary my-4" type="submit" (click)="postS(data.value)">Post</button>
+                <input type="text" placeholder="Upload image" name="image" ngModel>
+            </div>
+        </form>
+        <div class="image-box" *ngFor="let i of array">
+            <strong class="p-4">{{useRname}}</strong>
+            <img src="{{i.image}}" alt="image" width="452px" height="240px">
+            <small class="p-2">{{i.text}}</small><br>
+            <small class="p-2" style="cursor: pointer;" (click)="likeBtn()">&#10084;</small><small>{{likeButton}} liked it</small><br>
+            <strong class="p-2" style="font-size: small;">Comments</strong><br>
+            <div *ngFor="let i of commentArray">
+                <small class="p-2" style="font-size: small;"><strong>{{i.name}}:</strong> {{i.comment}}</small>
+            </div>
+            <form #comment="ngForm">
+                <input type="text" style="width: 22vw;" placeholder="Add a comment" name="comment" ngModel><button type="button" class="btn" (click)="addComment(comment.value)">comment</button>
+            </form><br>
+            
+        </div>
+    </div>
+    
+</div>
